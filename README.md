@@ -1,3 +1,15 @@
+
+## Set up:
+
+1. Install node stable version from https://nodejs.org/en/ .
+
+2. npm uninstall -g @angular/cli (if you already install angular cli old version)
+3. npm cache verify (if you already install angular cli old version)
+4. npm install -g @angular/cli
+5. Go to project folder and do : npm install
+
+
+
 # CarDekho
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
