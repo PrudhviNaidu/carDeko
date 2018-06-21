@@ -7,6 +7,7 @@ import { SearchComponent } from './search/search.component';
 import { ResultComponent } from './result/result.component';
 import { CompareComponent } from './compare/compare.component';
 import { DetailsComponent } from './details/details.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DetailsComponent } from './details/details.component';
     DetailsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
