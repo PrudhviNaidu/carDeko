@@ -6,14 +6,11 @@ import { CompareComponent } from './compare/compare.component';
 import { ResultComponent } from './result/result.component';
 
 const routes: Routes = [
+      {path: '', component: SearchComponent},
       {path: 'search', component: SearchComponent},
       {path: 'details', component: DetailsComponent},
-      {path: 'details2', loadChildren: './details2/details2.module#Details2Module'},
       {path: 'compare', component: CompareComponent},
-      {path: 'results', component: ResultComponent},
-      {path: '', component: SearchComponent},
-      {path: '**', component: SearchComponent}
-
+      {path: 'results', component: ResultComponent}
 ];
 
 @NgModule({
