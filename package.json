@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "prudhvi": "ng build --prod",
-    "build-qa": "npm version patch && node --max_old_space_size=4096 ./node_modules/@angular/cli/bin/ng build --c qa --aot"
+    "build-qa": "npm version patch && node --max_old_space_size=4096 ./node_modules/@angular/cli/bin/ng build --base-href /ePortal/ --c qa --aot"
   },
   "private": true,
   "dependencies": {
