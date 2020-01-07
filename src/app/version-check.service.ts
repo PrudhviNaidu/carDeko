@@ -39,6 +39,7 @@ export class VersionCheckService {
                         if (hashChanged) {
                               // ENTER YOUR CODE TO DO SOMETHING UPON VERSION CHANGE
                               // for an example: location.reload();
+                              console.log("changed");
                         }
                         // store the new hash so we wouldn't trigger versionChange again
                         // only necessary in case you did not force refresh
