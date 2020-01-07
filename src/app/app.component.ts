@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { VersionCheckService } from "./version-check.service";
 
 @Component({
-  selector: 'car-root',
-  templateUrl: './app.component.html'
+      selector: "car-root",
+      templateUrl: "./app.component.html"
 })
-export class AppComponent {
-  title = 'Car Deko';
+export class AppComponent implements OnInit {
+      title = 'Car Deko';
 
-  constructor(){}
+      constructor(private theversionCheckService: VersionCheckService) {}
 
+      ngOnInit() {
+            this.theversionCheckService.initVersionCheck(
+                  '../../dist/version.json'
+            );
+      }
 }
