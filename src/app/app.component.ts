@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
 
       ngOnInit() {
             this.theversionCheckService.initVersionCheck(
-                  '../../version.json'
+                  '../../ePortal/version.json'
             );
       }
 }
