@@ -11,6 +11,8 @@ export class AppComponent implements OnInit {
       constructor(private theversionCheckService: VersionCheckService) {}
 
       ngOnInit() {
+
+
             this.theversionCheckService.initVersionCheck(
                   '../../ePortal/version.json'
             );
